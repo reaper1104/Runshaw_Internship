@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device,initial-scale=1.0">
+        <title>document</title>
+        
+    </head>
+    <body>
+        <script>
+            function validateForm() {
+                let fname = document.forms["myform"]["fullname"].value;
+                let email = document.forms["myform"]["email"].value;
+    
+                if(fname =="") {
+                    alert("Name must be filled!");
+                    return false;
+                }
+            }
+        </script>
+        <form action="" name="myform" onsubmit="validateForm()" method="POST">
+            <div>
+                <label for="">Name</label>
+                <input type="text" name="fullname">
+            </div>
+            <div>
+                <label for="">email </label>
+                <input type="email " name="email">
+            </div>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+        <script>
+            function validateForm() {
+                let fname = document.forms["myform"]["fullname"].value;
+                let email = document.forms["myform"]["email"].value;
+    
+                if(fname =="") {
+                    alert("Name must be filled!");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
